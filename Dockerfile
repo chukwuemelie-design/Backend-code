@@ -1,8 +1,8 @@
 FROM ubuntu
 
 RUN apt-get update ; apt-get install -y
-RUN apt install openjdk-17-jre-headless -y
-RUN apt install maven -y
+RUN apt install openjdk-17-jdk-headless -y
+RUN apt install mvn -y
 
 WORKDIR /app
 
