@@ -1,15 +1,14 @@
-name: Build and Push docker image
+name: Build and push docker image
 
 on:
   push:
-    branches: [ main ]
 
 jobs:
-  build_and_push:         # Changed space to underscore
+  build_and_push:
     runs-on: ubuntu-latest
-    steps:                # Indented steps under the job
+    steps:
       - name: Check out the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Docker build
-        run: hostnamectl   # Note: This command shows system info, not a docker build
+      - name: Testing the runner
+        run: echo "The syntax is now correct and the runner is working!"
