@@ -4,7 +4,25 @@ on:
   push:
 
 jobs:
-  build_and_push:
+  build_and_push1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Testing the runner
+        run: echo "The syntax is now correct and the runner is working!"
+
+  build_and_push2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Testing the runner
+        run: echo "The syntax is now correct and the runner is working!"
+
+  build_and_push3:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
