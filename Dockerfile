@@ -15,4 +15,4 @@ RUN ls -la /app/target
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
