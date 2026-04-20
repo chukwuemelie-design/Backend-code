@@ -13,6 +13,8 @@ RUN mvn -f /app/pom.xml clean package -DskipTests
 
 RUN ls -la /app/target
 
+RUN mv /app/target/*.jar /app/app.jar
+
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
