@@ -6,13 +6,13 @@ on:
     branches: [ main ]
  
 jobs:
-  build and push:
+  build_and_push:
     runs-on: ubuntu-latest
 
-steps:
-- name: Check out the repository
-  uses: actions/checkout@v2
+  steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
 
-- name: Docker build
-  run:
-   hostnamectl
+    - name: Docker build
+      run:
+         hostnamectl
