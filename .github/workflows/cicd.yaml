@@ -10,5 +10,5 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
 
-      - name: docker build
+      - name: Docker build
         run: docker build -t EMELEN_BACKEND:LATEST .
