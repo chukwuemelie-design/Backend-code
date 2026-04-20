@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Docker build
-        run: docker build -t EMELEN_BACKEND:LATEST .
+        run: docker build -t EMELEN_BACKEND:latest .
