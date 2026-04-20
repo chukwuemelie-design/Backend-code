@@ -11,7 +11,7 @@ COPY ./pom.xml /app
 
 RUN maven -f /app/pom.xml clean package -DskipTests
 
-COPY ./target/*.jar /app/app.jar
+RUN ls -la /app/target
 
 EXPOSE 8080
 
