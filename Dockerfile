@@ -9,7 +9,7 @@ WORKDIR /app
 COPY ./src /app/src
 COPY ./pom.xml /app
 
-RUN maven -f /app/pom.xml clean package -DskipTests
+RUN mvn -f /app/pom.xml clean package -DskipTests
 
 RUN ls -la /app/target
 
