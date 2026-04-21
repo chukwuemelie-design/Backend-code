@@ -1,8 +1,9 @@
 FROM ubuntu
 
-RUN apt-get update ; apt-get install -y && rm -rf /var/lib/apt/lists/*
-RUN apt install openjdk-17-jdk-headless -y
-RUN apt install maven -y
+RUN apt-get update && apt-get install -y \
+    openjdk-17-jdk-headless \
+    maven \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
