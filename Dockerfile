@@ -2,14 +2,14 @@ FROM ubuntu
 
 RUN apt-get update ; apt-get install -y
 RUN apt install openjdk-17-jdk-headless -y
-RUN apt install mvn -y
+RUN apt install maven -y
 
 WORKDIR /app
 
-COPY ./src /app/src
 COPY ./pom.xml /app
+COPY ./src /app/src
 
-RUN mvn -f /app/pom.xml clean package -DskipTests
+RUN maven -f /app/pom.xml clean package -DskipTests
 
 
 RUN mv /app/target/*.jar /app/app.jar
