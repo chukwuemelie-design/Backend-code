@@ -12,6 +12,6 @@ jobs:
 
       - name: Docker build
         run: 
-          echo "${{ vars.ENV_FILE }}" > env.example
+          echo "${{ vars.ENV_FILE }}" > .env
           ls -la
           docker build -t emelen_backend:latest .
