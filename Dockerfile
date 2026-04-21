@@ -9,6 +9,7 @@ WORKDIR /app
 
 COPY ./pom.xml /app
 COPY ./src /app/src
+COPY .env.example /app/src/main/resources/env.example
 
 RUN mvn -f /app/pom.xml clean package -DskipTests
 
