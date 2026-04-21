@@ -16,5 +16,5 @@ jobs:
           echo "MONGO_PASSWORD=68XZ2P2RRCCNxTR4" >> .env
           echo "MONGO_CLUSTER=cluster0.hqahfia.mongodb.net/" >> .env
           ls -la
-          cat env.example
+          cat .env
          # docker build -t emelen_backend:latest .
