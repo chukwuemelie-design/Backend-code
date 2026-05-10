@@ -17,4 +17,4 @@ jobs:
           echo "MONGO_CLUSTER=cluster0.hqahfia.mongodb.net/" >> .env
           ls -la
           cat .env
-         # docker build -t emelen_backend:latest .
+          docker build -t emelen_backend:latest .
