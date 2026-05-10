@@ -34,3 +34,4 @@ build/
 
 ### Environment ###
 .env
+src/main/resource/env.example
